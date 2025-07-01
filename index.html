@@ -40,12 +40,14 @@
     amount=1000
     duration=2
     interest=5
+    
     simpleInterest=(amount * interest * duration) / 100;
     yearlyinterest=amount+simpleInterest
     console.log(yearlyinterest)
     console.log(simpleInterest)
     //compoundInterest
-   compoundInterest = amount * ((1 + interest / 100) * (1 + interest / 100)) - amount
+    AnnualAmount = amount * (1 + interest / 100) ** duration
+   compoundInterest = AnnualAmount - amount
 console.log(compoundInterest)
     //velocity of a car
     distance=150
