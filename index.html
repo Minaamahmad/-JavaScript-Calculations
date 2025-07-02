@@ -1,62 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    Javascript
+  </head>
+  <body>
+    <b>Introduction to Javascript</b>
     <script>
-        console.log("Hello world from vscode");
-        myage=21;
-        console.log(myage);
-    console.log(5+3);
-    console.log(5-3);
-        console.log(5*3);
-        console.log(5/3);
-        myExpense=340
-        myIncome=1000
-        disposableIncome=myIncome-myExpense
-        console.log(disposableIncome)
-//PercentageMarks
-        obtainedMarks=300
-        totalMarks=400
-        percentageMarks=obtainedMarks/totalMarks*100
-        console.log(percentageMarks)
+      console.log("Hello world from vscode");
+      myage = 21;
+      console.log(myage);
+      console.log(5 + 3);
+      console.log(5 - 3);
+      console.log(5 * 3);
+      console.log(5 / 3);
+      myExpense = 340;
+      myIncome = 1000;
+      disposableIncome = myIncome - myExpense;
+      console.log(disposableIncome);
+      //PercentageMarks
+      obtainedMarks = 300;
+      totalMarks = 400;
+      percentageMarks = (obtainedMarks / totalMarks) * 100;
+      console.log(percentageMarks);
 
-        //bILL AMOUNT
-        unitConsumed=500
-        oneUnitPrice=40
-        billAmount=unitConsumed*oneUnitPrice
-        console.log(billAmount)
-    //Age Find
-    birthYear=2003
-    currentYear=2025
-    Age=currentYear-birthYear
-    console.log(Age)
+      //bILL AMOUNT
+      unitConsumed = 500;
+      oneUnitPrice = 40;
+      billAmount = unitConsumed * oneUnitPrice;
+      console.log(billAmount);
+      //Age Find
+      birthYear = 2003;
+      currentYear = 2025;
+      Age = currentYear - birthYear;
+      console.log(Age);
 
-    //Simple Interest=amount,duration,interest
-    amount=1000
-    duration=2
-    interest=5
-    
-    simpleInterest=(amount * interest * duration) / 100;
-    yearlyinterest=amount+simpleInterest
-    console.log(yearlyinterest)
-    console.log(simpleInterest)
-    //compoundInterest
-    AnnualAmount = amount * (1 + interest / 100) ** duration
-   compoundInterest = AnnualAmount - amount
-console.log(compoundInterest)
-    //velocity of a car
-    distance=150
-    time=3
-    velocity=distance/ time
-    console.log(velocity)
+      //Simple Interest=amount,duration,interest
+      amount = 1000;
+      duration = 2;
+      interest = 5;
 
+      simpleInterest = (amount * interest * duration) / 100;
+      yearlyinterest = amount + simpleInterest;
+      console.log(yearlyinterest);
+      console.log(simpleInterest);
+      //compoundInterest
+      AnnualAmount = amount * (1 + interest / 100) ** duration;
+      compoundInterest = AnnualAmount - amount;
+      console.log(compoundInterest);
+      //velocity of a car
+      distance = 150;
+      time = 3;
+      velocity = distance / time;
+      console.log(velocity);
+      Age = 63;
+      if (Age < 22) {
+        alert("You are not eligible");
+      }
+
+      if (Age >= 65) {
+        alert("You are retired");
+      }
+      isSignedIn = false;
+      if (isSignedIn == false) {
+        alert("You are not signed in");
+      }
+      birthdate = 24;
+      if (birthdate == 23) {
+        alert("Happy Birthday");
+      }
+      initialAmount = 1000;
+      interest = 0.2;
+      time = 2; //years
+
+      simpleInterest = initialAmount * interest * time;
+      console.log(simpleInterest);
+      totalinterest = initialAmount + simpleInterest;
+      console.log(totalinterest);
+      if (totalinterest >= 1500) {
+        alert("This is Cancelled");
+      }
+
+      myObtainedPercentage = 90;
+      if (myObtainedPercentage >= 90) {
+        alert("Your Grade is A");
+      } else if (myObtainedPercentage > 80) {
+        alert("Your Grade is B+");
+      } else {
+        alert("No Grade");
+      }
+      myValue = 10;
+      if (myValue > 0) {
+        alert("value is positive");
+      } else if (myValue < 0) {
+        alert("Value is negative");
+      }
+
+      for (let i = 1; i <= 100; i++) {
+        console.log(i);
+      }
+      for (let i = 100; i >= 1; i--) {
+        console.log(i);
+      }
     </script>
-</body>
+  </body>
 </html>
-
-
